@@ -1,4 +1,6 @@
 # Next steps
-- Add sell price data
-- Transform temporal weekday and month features into fourier features
-- Run a cross validation experiment to find n_bootsting rounds
+- Data preprocessing with polars
+- Finalise cross validation procedure: splits and metrics
+- Use CV to optimise lgb learning rate
+- Error analysis of best lgbm model thus far
+- Start record of leaderboard performance
