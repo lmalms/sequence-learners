@@ -1,9 +1,21 @@
 # Next steps
-- Look into reducing memory consumption in data processing
 - Use CV to determine if fourier features are actually important
 - Error analysis of best lgbm model thus far
 - Start record of leaderboard performance
 - Data preprocessing with polars - WIP but cool to learn the API
+
+# Learnings
+## Data Processing
+### Memory Errors
+- **Problem**
+    - Preprocessing and feature engineering often resulted in Out-of-Memory errors.
+    - The issue often came up when merging large dataframes together.
+- **Solutions**
+    - Cast columns to lower resolution datatypes before merging. For example, `pd.to_numeric()` was useful to casting numerical columns to smaller data types automatically. Casting columns to `categorical` variables also helps if the number of possible values is small.
+    - Merge as early as possible and do feature engineering on the merged dataframe. Computing extra features that are not needed for the merge add memory overhead. Try and compute them on the dataframe after the merge.
+    - Merge in chunks. Rather than trying to merge large dataframes in a single call, iterate over the larger dataframe in chucnks and merge the chunks iteratively with other dataframes. After iterating over the dataframe chunks concatenate them into the final dataframe.
+
+## Modelling
 
 # Resources
 - https://www.sciencedirect.com/science/article/pii/S0169207021001874
