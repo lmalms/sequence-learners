@@ -1,6 +1,6 @@
 # Next steps
-- Use CV to determine if fourier features are actually important
-- Error analysis of best lgbm model thus far
+- Improve EDA plotting
+- Add lagged and rolling sales and price features
 - Start record of leaderboard performance
 - Data preprocessing with polars - WIP but cool to learn the API
 
