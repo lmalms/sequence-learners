@@ -1,0 +1,28 @@
+{
+    "scores": [
+        2.745012258975484,
+        2.9584025930623215,
+        2.906899250505368,
+        2.836835188135895,
+        2.8002968363617824
+    ],
+    "mean_score": 2.8494892254081705,
+    "std_score": 0.07570136716042204,
+    "best_iterations": [
+        665,
+        555,
+        444,
+        688,
+        959
+    ],
+    "mean_best_iteration": 662.2,
+    "parameters": {
+        "objective": "tweedie",
+        "learning_rate": 0.05,
+        "num_leaves": "2 ** 7 - 1",
+        "max_bin": "2 ** 7 - 1",
+        "metric": "rmse",
+        "force_col_wise": true
+    },
+    "notes": "Combination of Tweedie objective and more regularisation (lower num_leaves and max_bin) seems to have improved performance. Lowest mean and std rmse scores so far. Reaching the early stopping rounds on quite low iterations now. Might be worth looking into a smaller learning rate."
+}

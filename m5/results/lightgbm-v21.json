@@ -15,5 +15,12 @@
         1000,
         1000
     ],
-    "mean_best_iteration": 937.4
+    "mean_best_iteration": 937.4,
+    "parameters": {
+        "objective": "poisson",
+        "learning_rate": 0.05,
+        "metric": "rmse",
+        "force_col_wise": true
+    },
+    "notes": "Never reached the early stopping rounds. Suggests that learning rate is too low or that model should be trained for longer."
 }
