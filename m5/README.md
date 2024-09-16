@@ -1,6 +1,6 @@
 # Next steps
-- Improve EDA plotting
-- Add lagged and rolling sales and price features
+- Fix lagged sales features -- using diff when I should be using shift!
+- Add lagged price features
 - Start record of leaderboard performance
 - Data preprocessing with polars - WIP but cool to learn the API
 
@@ -9,11 +9,13 @@
 ### Memory Errors
 - **Problem**
     - Preprocessing and feature engineering often resulted in Out-of-Memory errors.
-    - The issue often came up when merging large dataframes together.
+    - The issue often came up when merging large dataframes together or concatenating dataframes across rows (i.e. `pd.concat(..., axis=1)`)
 - **Solutions**
     - Cast columns to lower resolution datatypes before merging. For example, `pd.to_numeric()` was useful to casting numerical columns to smaller data types automatically. Casting columns to `categorical` variables also helps if the number of possible values is small.
     - Merge as early as possible and do feature engineering on the merged dataframe. Computing extra features that are not needed for the merge add memory overhead. Try and compute them on the dataframe after the merge.
     - Merge in chunks. Rather than trying to merge large dataframes in a single call, iterate over the larger dataframe in chucnks and merge the chunks iteratively with other dataframes. After iterating over the dataframe chunks concatenate them into the final dataframe.
+    - During the merge only keep columns that are actually needed for the merge. Drop any unnecessary columns before the merge. After each chunk iteration only store the target column that is to be inserted into the original dataframe. Do not store columns that already exist in the original dataframe as this adds unnecessary overhead.
+    - In the final concatenation try and avoid row-wise `(axis=1)` concats and try just inserting the column instead.
 
 ## Modelling
 
