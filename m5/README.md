@@ -27,3 +27,9 @@
 - https://cienciadedatos.net/documentos/py39-forecasting-time-series-with-skforecast-xgboost-lightgbm-catboost.html
 - https://scikit-learn.org/stable/auto_examples/linear_model/plot_tweedie_regression_insurance_claims.html
 - https://scikit-learn.org/stable/auto_examples/linear_model/plot_poisson_regression_non_normal_loss.html
+
+
+## Hierarchical Forecasting
+- https://github.com/Nixtla/hierarchicalforecast
+- https://github.com/rshyamsundar/gluonts-hierarchical-ICML-2021
+- https://github.com/sktime/sktime-tutorial-pydata-berlin-2022
