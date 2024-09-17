@@ -1,5 +1,4 @@
 # Next steps
-- Fix lagged sales features -- using diff when I should be using shift!
 - Add lagged price features
 - Start record of leaderboard performance
 - Data preprocessing with polars - WIP but cool to learn the API
