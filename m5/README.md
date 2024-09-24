@@ -1,6 +1,7 @@
 # Next steps
-- Add lagged price features
-- Start record of leaderboard performance
+- Include category maps in dataset
+- Cast fourier features + sell price to float16 in pre processing
+- Residual + SHAP analysis
 - Data preprocessing with polars - WIP but cool to learn the API
 
 # Learnings
