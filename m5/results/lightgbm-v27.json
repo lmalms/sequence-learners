@@ -1,0 +1,27 @@
+{
+    "scores": [
+        2.484930216364153,
+        2.4427440609963926,
+        2.3729840932894257,
+        2.307913382320338,
+        2.3114920206387977
+    ],
+    "mean_score": 2.3840127547218217,
+    "std_score": 0.07043536487572087,
+    "best_iterations": [
+        636,
+        195,
+        154,
+        272,
+        166
+    ],
+    "mean_best_iteration": 284.6,
+    "parameters": {
+        "objective": "tweedie",
+        "learning_rate": 0.05,
+        "num_leaves": "2 ** 7 - 1",
+        "max_bin": "2 ** 7 - 1",
+        "metric": "rmse",
+        "force_col_wise": true
+    }
+}
