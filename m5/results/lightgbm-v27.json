@@ -23,5 +23,9 @@
         "max_bin": "2 ** 7 - 1",
         "metric": "rmse",
         "force_col_wise": true
+    },
+    "submission": {
+        "version": 28,
+        "private_score": 0.74629
     }
 }
