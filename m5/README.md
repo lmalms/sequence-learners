@@ -1,6 +1,7 @@
 # Next steps
 - Include category maps in dataset
 - Cast fourier features + sell price to float16 in pre processing
+- Also evaluate on train set
 - Residual + SHAP analysis
 - Data preprocessing with polars - WIP but cool to learn the API
 
