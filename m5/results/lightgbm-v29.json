@@ -26,5 +26,9 @@
         "bagging_fraction": 0.8,
         "metric": "rmse",
         "force_col_wise": true
+    },
+    "submission": {
+        "version": 31,
+        "private_score": 0.70524
     }
 }

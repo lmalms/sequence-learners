@@ -1,8 +1,8 @@
 # Next steps
-- Include category maps in dataset
-- Cast fourier features + sell price to float16 in pre processing
-- Also evaluate on train set
+- Include more aggregate statistics + window funcs on sales and price features
+- Include all events and add lag event features (+ other exogenous lag features)
 - Residual + SHAP analysis
+- Train models at store level
 - Data preprocessing with polars - WIP but cool to learn the API
 
 # Learnings
@@ -22,16 +22,22 @@
 
 # Resources
 - https://www.sciencedirect.com/science/article/pii/S0169207021001874
-- https://github.com/Mcompetitions/M5-methods/tree/master
-- https://tsfresh.readthedocs.io/en/latest/index.html
 - https://www.sciencedirect.com/science/article/abs/pii/S0169207016000315
 - https://www.sciencedirect.com/science/article/abs/pii/S0169207019301359
 - https://cienciadedatos.net/documentos/py39-forecasting-time-series-with-skforecast-xgboost-lightgbm-catboost.html
 - https://scikit-learn.org/stable/auto_examples/linear_model/plot_tweedie_regression_insurance_claims.html
 - https://scikit-learn.org/stable/auto_examples/linear_model/plot_poisson_regression_non_normal_loss.html
 
+## Talks
+- https://www.youtube.com/watch?v=9QtL7m3YS9I
 
-## Hierarchical Forecasting
+## Repos
+- https://www.sktime.net/en/stable/
+- https://unit8co.github.io/darts/
+- https://tsfresh.readthedocs.io/en/latest/index.html
 - https://github.com/Nixtla/hierarchicalforecast
+- https://github.com/Mcompetitions/M5-methods/tree/master
+
+## Tutorials
 - https://github.com/rshyamsundar/gluonts-hierarchical-ICML-2021
 - https://github.com/sktime/sktime-tutorial-pydata-berlin-2022
