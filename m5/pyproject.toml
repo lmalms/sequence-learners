@@ -10,6 +10,10 @@ python = ">=3.10, <3.13"
 darts = "^0.30.0"
 sktime = "^0.33.1"
 
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.24.0"
+ipykernel = "^6.29.4"
+ipywidgets = "^8.1.5"
 
 [build-system]
 requires = ["poetry-core"]
