@@ -1,4 +1,5 @@
 # Next steps
+- Develop baseline models e.g. exponential smoothing
 - Include more aggregate statistics + window funcs on sales and price features
 - Include all events and add lag event features (+ other exogenous lag features)
 - Residual + SHAP analysis
