@@ -1,10 +1,12 @@
-# Next steps
-- Develop baseline models e.g. exponential smoothing
+# To Do -- Path to Completion
 - Include more aggregate statistics + window funcs on sales and price features
 - Include all events and add lag event features (+ other exogenous lag features)
+- Documentation for feature engineering functions
+- Develop baseline models e.g. exponential smoothing
 - Residual + SHAP analysis
 - Train models at store level
-- Data preprocessing with polars - WIP but cool to learn the API
+- Cluster time series and train similar clusters together
+- Data preprocessing with polars
 
 # Learnings
 ## Data Processing
