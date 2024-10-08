@@ -2,7 +2,7 @@
 - Include more aggregate statistics + window funcs on sales and price features
 - Include all events and add lag event features (+ other exogenous lag features)
 - Documentation for feature engineering functions
-- Develop baseline models e.g. exponential smoothing
+- Develop baseline models e.g. exponential smoothing with Darts
 - Residual + SHAP analysis
 - Train models at store level
 - Cluster time series and train similar clusters together
