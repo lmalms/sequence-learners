@@ -1,9 +1,7 @@
-# To Do -- Path to Completion
-- Include more aggregate statistics + window funcs on sales and price features
-- Include all events and add lag event features (+ other exogenous lag features)
+# Next steps -- Path to Completion
 - Documentation for feature engineering functions
+- Residual + SHAP analysis of best performing global LightGBM model
 - Develop baseline models e.g. exponential smoothing with Darts
-- Residual + SHAP analysis
 - Train models at store level
 - Cluster time series and train similar clusters together
 - Data preprocessing with polars
@@ -22,6 +20,14 @@
     - In the final concatenation try and avoid row-wise `(axis=1)` concats and try just inserting the column instead.
 
 ## Modelling
+### Single Global Forecasting Model
+- For a single global LightGBM model the lowest average RMSE is limited to ~2.7 sales
+- Main limitation seems to be available RAM which limits the number of features that can be included in the model
+- Can use parameters like `num_leaves`, `max_bin` and `histogram_pool_size` to control memory consumption at the cost of lower accuracy
+- Next steps to unlock further improvements:
+    - Residual and Shaply value analysis of best performing model
+    - Train store-level LightGBM. This should reduce RAM consumption, and might be an easier pattern to learn
+
 
 # Resources
 - https://www.sciencedirect.com/science/article/pii/S0169207021001874
