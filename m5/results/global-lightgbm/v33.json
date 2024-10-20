@@ -15,5 +15,23 @@
         334,
         543
     ],
-    "mean_best_iteration": 350
+    "mean_best_iteration": 350,
+    "parameters": {
+        "objective": "tweedie",
+        "tweedie_variance_power": 1.1,
+        "learning_rate": 0.025,
+        "num_leaves": "2 ** 7 - 1",
+        "max_bin": "2 ** 7 - 1",
+        "bagging_freq": 1,
+        "bagging_fraction": 0.8,
+        "feature_fraction": 0.8,
+        "metric": "rmse",
+        "force_col_wise": true,
+        "seed": 1,
+        "histogram_pool_size": 11000
+    },
+    "submission": {
+        "version": 35,
+        "private_score": 0.64283
+    }
 }
