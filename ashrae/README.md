@@ -1,3 +1,11 @@
+# ASHRAE III
+
+## Next steps
+
+- Use sklearn pipelines in baseline notebook
+- Understand and implement evaluation metric
+- Settle on CV
+
 ## Resources
 
 ### Papers
