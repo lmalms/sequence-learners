@@ -2,9 +2,13 @@
 
 ## Next steps
 
-- Use sklearn pipelines in baseline notebook
+- EDA: are we missing timestamps for a given building?
 - Understand and implement evaluation metric
 - Settle on CV
+
+## Notes
+
+## Learnings
 
 ## Resources
 
