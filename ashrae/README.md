@@ -3,7 +3,6 @@
 ## Next steps
 
 - EDA: For each plot add question plot tries to answer and conclusion.
-- Understand and implement evaluation metric - what are properties of this metric?
 - Settle on CV
 
 ## Notes
