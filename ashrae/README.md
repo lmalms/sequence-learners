@@ -17,5 +17,10 @@
 ## Resources
 
 ### Papers
+
 - https://arxiv.org/pdf/2007.06933
 - https://arxiv.org/pdf/2106.13475
+
+### Blogs
+
+- https://www.kaggle.com/code/selfishgene/filtering-and-auto-correlation-tutorial
