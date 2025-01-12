@@ -2,11 +2,18 @@
 
 ## Next steps
 
+- Feature engineering:
+    - Reduce number of weather features and start with small feature set
+    - Construct test set features and create kaggle datasets
+
 - Settle on CV: https://www.kaggle.com/code/kyakovlev/ashrae-cv-options
     - Should splits be stratified?
+    - What is the building and site distribution in each split?
+
 - Outlier removal:
     - https://www.kaggle.com/competitions/ashrae-energy-prediction/discussion/122471
     - https://www.kaggle.com/code/gunesevitan/ashrae-lightgbm-1-048-no-leak
+
 - EDA: For each plot add question plot tries to answer and conclusion.
 
 
