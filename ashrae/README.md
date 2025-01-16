@@ -4,10 +4,7 @@
 
 - Feature engineering:
     - https://www.kaggle.com/code/mmotoki/hierarchical-bayesian-target-encoding
-
-- Settle on CV: https://www.kaggle.com/code/kyakovlev/ashrae-cv-options
-    - Should splits be stratified?
-    - What is the building and meter id distribution in each split?
+    - Building id target encoding?
 
 - Outlier removal:
     - https://www.kaggle.com/competitions/ashrae-energy-prediction/discussion/122471
@@ -15,11 +12,16 @@
     - https://www.kaggle.com/code/aitude/ashrae-kfold-lightgbm-without-leak-1-08
 
 - EDA: For each plot add question plot tries to answer and conclusion.
+- sklearn HistGradientBoostingRegressor: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html
 
 
 ## Notes
 
 ## Learnings
+
+### Training Gradient Boosted Tree Models
+
+- 
 
 ## Resources
 
