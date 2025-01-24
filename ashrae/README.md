@@ -2,8 +2,7 @@
 
 ## Next steps
 
-- LightGBM: Prepare a new submission using global LightGBM and all features
-- Feature engineering: How good are the target encodings?
+- Build meter level lightgbm model with building id target encodings
 - Read: https://scikit-learn.org/stable/modules/cross_validation.html
 - sklearn Pipelines: Build prediction pipeline using HistGradientBoostingRegressor
 
