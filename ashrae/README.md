@@ -2,7 +2,6 @@
 
 ## Next steps
 
-- Build meter level lightgbm model with building id target encodings
 - Read: https://scikit-learn.org/stable/modules/cross_validation.html
 - sklearn Pipelines: Build prediction pipeline using HistGradientBoostingRegressor
 
