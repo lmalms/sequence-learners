@@ -3,7 +3,8 @@
 ## Next steps
 
 - Outlier removal:
-    - Run feature engineering with first round of outlier removal for electricity + score model
+    - Run feature engineering with first round of outlier removal for electricity + score models.
+    - Remove periods of constant electricy readings, run feature eng. and score models.
     - https://www.kaggle.com/competitions/ashrae-energy-prediction/discussion/122471
     - https://www.kaggle.com/code/gunesevitan/ashrae-lightgbm-1-048-no-leak
     - https://www.kaggle.com/code/aitude/ashrae-kfold-lightgbm-without-leak-1-08
