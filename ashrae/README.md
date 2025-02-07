@@ -2,12 +2,9 @@
 
 ## Next steps
 
-- Outlier removal:
-  - Run feature engineering with first round of outlier removal for electricity + score models.
-  - Remove periods of constant electricity readings, run feature eng. and score models.
-  - <https://www.kaggle.com/competitions/ashrae-energy-prediction/discussion/122471>
-  - <https://www.kaggle.com/code/gunesevitan/ashrae-lightgbm-1-048-no-leak>
-  - <https://www.kaggle.com/code/aitude/ashrae-kfold-lightgbm-without-leak-1-08>
+- Feature engineering for cooling degree days, heating degree days
+- Meter level LightGBM
+- Weather data imputation
 
 - Read: <https://scikit-learn.org/stable/modules/cross_validation.html>
 - sklearn Pipelines: Build prediction pipeline using HistGradientBoostingRegressor
