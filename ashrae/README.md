@@ -2,9 +2,7 @@
 
 ## Next steps
 
-- Feature engineering for cooling degree days, heating degree days
-- Meter level LightGBM
-- Weather data imputation
+- Meter level LightGBM: Can try with building id target encoder but perhaps only for certain meter readings
 
 - Read: <https://scikit-learn.org/stable/modules/cross_validation.html>
 - sklearn Pipelines: Build prediction pipeline using HistGradientBoostingRegressor
