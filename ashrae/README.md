@@ -2,10 +2,9 @@
 
 ## Next steps
 
-- Meter level LightGBM: Can try with building id target encoder but perhaps only for certain meter readings
-
-- Read: <https://scikit-learn.org/stable/modules/cross_validation.html>
-- sklearn Pipelines: Build prediction pipeline using HistGradientBoostingRegressor
+- Meter level LightGBM: Try again with best performing params from global model
+- Run error analysis notebook with best global model
+- Write up.
 
 ## Notes
 
