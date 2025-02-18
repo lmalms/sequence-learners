@@ -1,21 +1,13 @@
 # ASHRAE III
 
-## Next steps
+## Overview
 
-- Meter level LightGBM: Try again with best performing params from global model
-- Run error analysis notebook with best global model
-- Write up.
+This directory contains the code and notebooks for the ASHRAE III project. All code was run in Jupyter notebooks on Kaggle. The most important notebooks are:
 
-## Notes
-
-## Learnings
-
-### Data (exploration, cleaning, feature engineering, etc)
-
-- It pays off to plot energy demand for individual buildings.
-  - In the initial EDA I primarily focused on energy demand at an aggregate level e.g What is the distribution of electricity consumption across all buildings and timestamps? What is the timeseries of average electricity consumption across all buildings. However, this hides potential data issues with individual buildings e.g. outliers, long periods of zero or constant consumption which do not match typical consumption patterns.
-
-### Modelling
+- [`ashrae-eda.ipynb`](./ashrae-eda.ipynb): Exploratory data analysis.
+- [`ashrae-feature-engineering.ipynb`](./ashrae-feature-engineering.ipynb): Prepares the dataset for model training. Writes datasets to disk.
+- [`ashrae-global-lightgbm.ipynb`](./ashrae-global-lightgbm.ipynb): Trains the best performing LightGBM model. Assumes data was prepared by `ashrae-feature-engineering.ipynb`.
+- [`ashrae-meter-level-lightgbm.ipynb`](./ashrae-meter-level-lightgbm.ipynb): Trains a LightGBM model at the meter level. Assumes data was prepared by `ashrae-feature-engineering.ipynb`.
 
 ## Resources
 
