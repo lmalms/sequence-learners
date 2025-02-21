@@ -1,23 +1,5 @@
 # ASHRAE III
 
-More detailed write up:
-
-## Introduction
-- ASHRAE competition
-- Dataset, goal
-- Evaluation metric, some of the properties of this metric.
-
-## Data, feature engineering, outliers
-
-## Modelling
-
-## Results, error analysis
-
-## Learnings
-
-## Resources
-
-
 ## Overview
 
 This directory contains the code and notebooks for the ASHRAE III project. All code was run in Jupyter notebooks on Kaggle. The most important notebooks are:
