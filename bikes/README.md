@@ -1,7 +1,5 @@
 # Data
 
-https://at.govt.nz/cycling-walking/research-monitoring/monthly-cycle-monitoring
-
 ## Models
 
 ### Data
