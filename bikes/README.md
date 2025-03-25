@@ -3,7 +3,6 @@
 ## Models
 
 ### Data
-- Apply Fourier transform: What does the result look like?
 
 ### Exponential Smoothing
 
