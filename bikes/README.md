@@ -16,6 +16,8 @@
 
 ### RNN / LSTM / GRU
 
+### DeepAR
+
 ### WaveNet
 
 ## Resources
