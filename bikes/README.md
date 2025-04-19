@@ -1,3 +1,14 @@
+## Next Steps:
+
+- Get DeepAR working on a simple dataset
+    - Previous implementations:
+        - https://github.com/husnejahan/DeepAR-pytorch?tab=readme-ov-file
+        - https://github.com/zhykoties/TimeSeries
+        - https://github.com/Nixtla/neuralforecast/tree/main
+
+- Compile bigger bikes dataset.
+- Run a benchmark comparison.
+
 # Data
 
 ## Models
