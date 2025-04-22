@@ -1,5 +1,8 @@
 ## Next Steps:
 
+- Implement: https://github.com/SheezaShabbir/Time-series-Analysis-using-LSTM-RNN-and-GRU?tab=readme-ov-file
+    - Learn to use pytroch and DL for time series forecasting.
+
 - Get DeepAR working on a simple dataset
     - Previous implementations:
         - https://github.com/husnejahan/DeepAR-pytorch?tab=readme-ov-file
@@ -29,7 +32,9 @@
 
 ### DeepAR
 
-### WaveNet
+### WaveNet / TCN
+
+### NBEATS
 
 ## Resources
 
