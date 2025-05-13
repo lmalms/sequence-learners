@@ -112,7 +112,6 @@ BIKE_DATASET_LOAD_CONFIGS = [
     ),
 ]
 
-
 LOCATION_MAP = {
     "GI TO TAMAKI DR SECTION-1": "GI to Tamaki Drive Section-1",
     "Great North Road NB Towards CBD": "Great North Road",
@@ -192,5 +191,35 @@ LOCATION_OUTLIERS = {
         datetime(2024, 4, 11),
         datetime(2024, 4, 12),
         datetime(2024, 4, 13),
+    ],
+}
+
+LOCATION_CHANGEPOINTS = {
+    "East Coast Road": [
+        datetime(2022, 1, 1),
+        datetime(2022, 11, 22),
+        datetime(2024, 12, 31),
+    ],
+    "Grafton Road": [
+        datetime(2022, 1, 1),
+        datetime(2023, 1, 16),
+        datetime(2024, 12, 31),
+    ],
+    "Great South Road": [
+        datetime(2022, 1, 1),
+        datetime(2022, 8, 29),
+        datetime(2023, 3, 2),
+        datetime(2024, 12, 31),
+    ],
+    "Karangahape Road": [
+        datetime(2022, 1, 1),
+        datetime(2024, 4, 15),
+        datetime(2024, 7, 19),
+        datetime(2024, 12, 31),
+    ],
+    "Lightpath": [
+        datetime(2022, 1, 1),
+        datetime(2023, 2, 5),
+        datetime(2024, 12, 31),
     ],
 }

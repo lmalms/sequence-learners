@@ -1,10 +1,16 @@
 import pandas as pd
 from tqdm import tqdm
 
-from .config import BIKE_DATASET_LOAD_CONFIGS, LOCATION_OUTLIERS, LOCATIONS_TO_EXCLUDE
+from .changepoints import adjust_scale
+from .config import (
+    BIKE_DATASET_LOAD_CONFIGS,
+    LOCATION_CHANGEPOINTS,
+    LOCATION_OUTLIERS,
+    LOCATIONS_TO_EXCLUDE,
+)
 from .dataset import BikeDataset
 from .impute import impute_missing_cycle_counts
-from .outliers import drop_outlier_counts
+from .outliers import drop_outliers
 from .resample import resample_cycle_counts
 
 
@@ -29,8 +35,11 @@ def load_cycle_counts() -> pd.DataFrame:
     cycle_counts = cycle_counts.drop_duplicates().dropna(subset=["count"])
 
     # Drop known outliers, resample to daily freq and fill missing values
-    cycle_counts = drop_outlier_counts(cycle_counts, LOCATION_OUTLIERS)
+    cycle_counts = drop_outliers(cycle_counts, LOCATION_OUTLIERS)
     cycle_counts = resample_cycle_counts(cycle_counts)
     cycle_counts = impute_missing_cycle_counts(cycle_counts)
+
+    # Adjust scale between changepoints
+    cycle_counts = adjust_scale(cycle_counts, LOCATION_CHANGEPOINTS)
 
     return cycle_counts

@@ -30,7 +30,7 @@ def get_outlier_df(location_df: pd.DataFrame, n_sigma: float = 3.0) -> pd.DataFr
     return outlier_df
 
 
-def drop_outlier_counts(
+def drop_outliers(
     cycle_counts: pd.DataFrame,
     outliers_by_location: dict[str, list[datetime]],
 ):
