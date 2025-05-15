@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 import pandas as pd
-from statsmodels.tsa.api import ExponentialSmoothing
+from statsmodels.tsa.api import ExponentialSmoothing as _ExponentialSmoothing
 
 
 class ExponentialSmoothingLearner:
@@ -19,7 +19,7 @@ class ExponentialSmoothingLearner:
         self._train_start = y.index.min().to_pydatetime()
         self._train_end = y.index.max().to_pydatetime()
 
-        self.model = ExponentialSmoothing(endog=y, **self.model_kwargs)
+        self.model = _ExponentialSmoothing(endog=y, **self.model_kwargs)
         self.fitted_model = self.model.fit()
 
     def predict(self) -> pd.Series:

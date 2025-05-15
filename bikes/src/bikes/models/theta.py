@@ -1,7 +1,7 @@
 from datetime import timedelta
 
 import pandas as pd
-from statsmodels.tsa.forecasting.theta import ThetaModel
+from statsmodels.tsa.forecasting.theta import ThetaModel as _ThetaModel
 
 
 class ThetaSequenceLearner:
@@ -13,7 +13,7 @@ class ThetaSequenceLearner:
         self._train_start = y.index.min().to_pydatetime()
         self._train_end = y.index.max().to_pydatetime()
 
-        self.model = ThetaModel(endog=y, **self.model_kwargs)
+        self.model = _ThetaModel(endog=y, **self.model_kwargs)
         self.fitted_model = self.model.fit()
 
     def predict(self) -> pd.Series:

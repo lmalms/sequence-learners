@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 import pandas as pd
-from prophet import Prophet
+from prophet import Prophet as _Prophet
 
 
 class ProphetSequenceLearner:
@@ -22,7 +22,7 @@ class ProphetSequenceLearner:
         y_train.index.name = "ds"
         y_train = y_train.reset_index()
 
-        self.model = Prophet(**self.model_kwargs).fit(y_train)
+        self.model = _Prophet(**self.model_kwargs).fit(y_train)
 
     def predict(self) -> pd.Series:
         forecast_start = self._train_end + timedelta(days=1)

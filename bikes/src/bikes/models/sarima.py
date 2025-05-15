@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 import pandas as pd
-from statsmodels.tsa.statespace.sarimax import SARIMAX
+from statsmodels.tsa.statespace.sarimax import SARIMAX as _SARIMAX
 
 
 class SARIMASequenceLearner:
@@ -16,7 +16,7 @@ class SARIMASequenceLearner:
         self._train_start = y.index.min().to_pydatetime()
         self._train_end = y.index.max().to_pydatetime()
 
-        self.model = SARIMAX(endog=y, **self.model_kwargs)
+        self.model = _SARIMAX(endog=y, **self.model_kwargs)
         self.fitted_model = self.model.fit()
 
     def predict(self) -> pd.Series:
