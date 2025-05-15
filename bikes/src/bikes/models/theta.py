@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 import pandas as pd
 from statsmodels.tsa.forecasting.theta import ThetaModel
 
@@ -15,4 +17,11 @@ class ThetaSequenceLearner:
         self.fitted_model = self.model.fit()
 
     def predict(self) -> pd.Series:
-        return self.fitted_model.forecast(steps=self.horizon)
+        forecast_start = self._train_end + timedelta(days=1)
+        forecast_end = forecast_start + timedelta(days=self.horizon - 1)
+        forecast_dates = pd.date_range(forecast_start, forecast_end, freq="D")
+
+        y_hat = self.fitted_model.forecast(steps=self.horizon)
+        y_hat.index = forecast_dates
+
+        return y_hat
