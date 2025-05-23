@@ -1,6 +1,9 @@
+from datetime import timedelta
+
 import pandas as pd
 import torch
 import torch.nn as nn
+from loguru import logger
 from torch.optim import Adam
 from torch.utils.data import DataLoader
 
@@ -40,6 +43,9 @@ class RNNSequenceLearner(nn.Module):
         batch_size: int = 32,
         lr: float = 1e-03,
     ):
+        self._train_start = y.index.min().to_pydatetime()
+        self._train_end = y.index.max().to_pydatetime()
+
         # Prepare dataloader
         in_seq_length = input_seq_length or 3 * self.horizon
         ts = get_tensor_train_dataset(y, in_seq_length, self.horizon)
@@ -60,5 +66,27 @@ class RNNSequenceLearner(nn.Module):
                 optimizer.step()
 
             if epoch % 10 == 0:
-                print(f"Epoch [{epoch}/{n_epochs}], Loss: {loss.item():.4f}")
-                print("------------------------------")
+                logger.debug(f"Epoch [{epoch}/{n_epochs}], Loss: {loss.item():.4f}")
+
+    def predict(
+        self,
+        y: pd.Series,
+        input_seq_length: int | None = None,
+    ) -> pd.Series:
+        # RNNs requires some input features in order to make forecasts.
+        in_seq_length = input_seq_length or 3 * self.horizon
+        X_test_seq = y.iloc[-in_seq_length:].to_numpy()
+        X_test = torch.tensor(X_test_seq, dtype=torch.float32).view(1, in_seq_length, 1)
+
+        self.eval()
+        with torch.no_grad():
+            y_hat = self(X_test)
+
+        # Get predictions for last input and construct series
+        forecast_start = self._train_end + timedelta(days=1)
+        forecast_end = forecast_start + timedelta(days=self.horizon - 1)
+        y_hat_index = pd.date_range(forecast_start, forecast_end, freq="D")
+        y_hat_data = y_hat[0, -1, :].numpy()
+        y_hat = pd.Series(data=y_hat_data, index=y_hat_index)
+
+        return y_hat
