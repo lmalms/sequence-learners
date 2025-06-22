@@ -4,6 +4,7 @@ from typing import Any
 
 from bikes.models.ets import ExponentialSmoothingLearner
 from bikes.models.prophet import ProphetSequenceLearner
+from bikes.models.rnn import RNNSequenceLearner
 from bikes.models.sarima import SARIMASequenceLearner
 from bikes.models.theta import ThetaSequenceLearner
 
@@ -17,16 +18,18 @@ VALIDATION_PERIODS = [
 
 
 @dataclass
-class ModelConfig:
-    model_class: Any
-    model_init_kwargs: dict[str, Any]
+class PipelineConfig:
+    learner_class: Any
+    learner_kwargs: dict[str, Any]
+    transformer_class: Any = None
+    transformer_kwargs: dict[str, Any] | None = None
 
 
-LOCATION_MODEL_CONFIGS: dict[str, list[ModelConfig]] = {
+LOCATION_MODEL_CONFIGS: dict[str, list[PipelineConfig]] = {
     "Nelson Street": [
-        ModelConfig(
-            model_class=ExponentialSmoothingLearner,
-            model_init_kwargs={
+        PipelineConfig(
+            learner_class=ExponentialSmoothingLearner,
+            learner_kwargs={
                 "trend": "add",
                 "damped_trend": True,
                 "seasonal": "mul",
@@ -34,21 +37,21 @@ LOCATION_MODEL_CONFIGS: dict[str, list[ModelConfig]] = {
                 "freq": "D",
             },
         ),
-        ModelConfig(
-            model_class=SARIMASequenceLearner,
-            model_init_kwargs={
+        PipelineConfig(
+            learner_class=SARIMASequenceLearner,
+            learner_kwargs={
                 "order": (1, 1, 2),
                 "seasonal_order": (1, 1, 1, 7),
                 "freq": "D",
             },
         ),
-        ModelConfig(
-            model_class=ThetaSequenceLearner,
-            model_init_kwargs={},
+        PipelineConfig(
+            learner_class=ThetaSequenceLearner,
+            learner_kwargs={},
         ),
-        ModelConfig(
-            model_class=ProphetSequenceLearner,
-            model_init_kwargs={},
+        PipelineConfig(
+            learner_class=ProphetSequenceLearner,
+            learner_kwargs={},
         ),
     ],
 }

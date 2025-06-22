@@ -2,10 +2,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from .config import LOCATION_MODEL_CONFIGS, VALIDATION_PERIODS, ModelConfig
+from .config import LOCATION_MODEL_CONFIGS, VALIDATION_PERIODS, PipelineConfig
 
 
-def get_model_forecasts(df: pd.DataFrame, model_config: ModelConfig) -> pd.DataFrame:
+def get_model_forecasts(df: pd.DataFrame, model_config: PipelineConfig) -> pd.DataFrame:
 
     all_forecast_dfs = []
 

@@ -7,7 +7,7 @@ from loguru import logger
 from torch.optim import Adam
 from torch.utils.data import DataLoader
 
-from bikes.utils.preprocess import get_tensor_train_dataset
+from bikes.preprocess.preprocess import get_tensor_train_dataset
 
 
 class RNNSequenceLearner(nn.Module):
