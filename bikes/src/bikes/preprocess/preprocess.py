@@ -4,7 +4,7 @@ import torch
 from torch.utils.data import TensorDataset
 
 
-class Scaler:
+class StandardScaler:
     def __init__(self):
         self.mean_: float | None = None
         self.scale_: float | None = None
@@ -25,6 +25,27 @@ class Scaler:
     def inverse_transform(self, y: pd.Series) -> pd.Series:
         assert self.is_fit
         return y * self.scale_ + self.mean_
+
+
+class MeanScaler:
+    def __init__(self):
+        self.mean_: float | None = None
+
+    @property
+    def is_fit(self) -> bool:
+        return self.mean_ is not None
+
+    def fit_transform(self, y: pd.Series) -> pd.Series:
+        self.mean_ = 1 + y.mean()
+        return self.transform(y)
+
+    def transform(self, y: pd.Series) -> pd.Series:
+        assert self.is_fit
+        return y / self.mean_
+
+    def inverse_transform(self, y: pd.Series) -> pd.Series:
+        assert self.is_fit
+        return y * self.mean_
 
 
 def get_tensor_train_dataset(
