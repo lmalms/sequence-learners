@@ -23,4 +23,4 @@ def mape(y_true: pd.Series, y_pred: pd.Series):
 
     y_true = np.array(y_true)
     y_pred = np.array(y_pred)
-    return np.abs((y_true - y_pred) / y_true)
+    return np.mean(np.abs((y_true - y_pred) / y_true))
