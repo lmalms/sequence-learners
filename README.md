@@ -1,10 +1,14 @@
 # sequence-learners
 
-## Future projects
+## Projects
 
-### What would I like to learn?
+### [ASHRAE](./ashrae/)
 
-- Timeseries clusting
-- Deep dive into training classical ts models using max log-likelihood
-- Deep dive into deep learning for ts
-- ES-RNN model
+### [Auckland Bikes](./bikes/)
+
+### [Grid Sight](./gridsight/)
+
+## Future Projects / Things I Would Like to Learn:
+
+- Timeseries clusting: [tslearn](https://tslearn.readthedocs.io/en/stable/user_guide/clustering.html)
+- Timeseries classification: [tslearn](https://tslearn.readthedocs.io/en/stable/variablelength.html#classification)
