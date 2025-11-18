@@ -1,13 +1,17 @@
 # GridSight
 
-## Dataset
+## Datasets
 
-- Electricity Load: https://dataminer2.pjm.com/list
-- Electricity Load: https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014
+### Electricity demand
+
+- UCI Dataset: https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014
 - Electricity Load: https://github.com/zhouhaoyi/ETDataset
+- Electricity Load: https://dataminer2.pjm.com/list
 
-- Electricity Price: https://dataminer2.pjm.com/list
-- Electricity Price: https://www.entsoe.eu/
+### Electricity price
+
+- https://dataminer2.pjm.com/list
+- https://www.entsoe.eu/
 
 ## Data Processing
 
