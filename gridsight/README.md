@@ -4,7 +4,6 @@
 
 ### Electricity demand
 
-- UCI Dataset: https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014
 - Electricity Load: https://github.com/zhouhaoyi/ETDataset
 - Electricity Load: https://dataminer2.pjm.com/list
 
