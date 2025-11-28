@@ -1,5 +1,29 @@
 from datetime import datetime
 
+UCI_CLIENT_SITES_TO_VALIDATE: list[str] = [
+    "MT_156",
+    "MT_162",
+    "MT_189",
+    "MT_190",
+    "MT_191",
+    "MT_205",
+    "MT_212",
+    "MT_217",
+    "MT_240",
+    "MT_251",
+    "MT_261",
+    "MT_262",
+    "MT_263",
+    "MT_267",
+    "MT_280",
+    "MT_297",
+    "MT_299",
+    "MT_307",
+    "MT_321",
+    "MT_329",
+]
+
+
 UCI_CLIENTS_TO_DROP: list[str] = [
     "MT_288",
     "MT_066",
@@ -269,5 +293,9 @@ UCI_CLIENTS_TO_FILTER: list[tuple[str, tuple[datetime, datetime]]] = [
     (
         "MT_015",
         (datetime(2013, 11, 19), datetime(2015, 1, 1)),
+    ),
+    (
+        "MT_156",
+        (datetime(2012, 9, 1), datetime(2015, 1, 1)),
     ),
 ]
