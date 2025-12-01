@@ -1,4 +1,8 @@
-from datetime import datetime
+from datetime import datetime, timedelta
+
+UCI_DATA_FREQUENCY_MINUTES = 15
+UCI_VALIDATION_START = datetime(2014, 12, 1)
+UCI_VALIDATION_WINDOW = timedelta(days=2)
 
 UCI_CLIENT_SITES_TO_VALIDATE: list[str] = [
     "MT_156",
