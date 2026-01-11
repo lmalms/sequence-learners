@@ -1,4 +1,4 @@
-PJM_SITES = [
+PJM_SITE_NAMES = [
     "AEP",
     "COMED",
     "DAYTON",
