@@ -35,6 +35,7 @@ VALIDATION_WINDOWS = {
     "DUQ": DEFAULT_VALIDATION_WINDOWS,
     "EKPC": DEFAULT_VALIDATION_WINDOWS,
     "FE": DEFAULT_VALIDATION_WINDOWS,
+    # fmt: off
     "NI": [
         (datetime(2010, 3, 10, 12), datetime(2010, 3, 12, 12)),  # [Wednesday, Friday]
         (datetime(2010, 4, 8, 10), datetime(2010, 4, 10, 10)),  # [Thursday, Saturday]
@@ -47,6 +48,7 @@ VALIDATION_WINDOWS = {
         (datetime(2010, 11, 18, 12), datetime(2010, 11, 20, 12)),  # [Thursday, Saturday]
         (datetime(2010, 12, 17, 19), datetime(2010, 12, 19, 19)),  # [Friday, Sunday]
     ],
+    # fmt: on
     "PJME": DEFAULT_VALIDATION_WINDOWS,
     "PJMW": DEFAULT_VALIDATION_WINDOWS,
 }
