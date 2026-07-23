@@ -8,6 +8,7 @@ dependencies = [
     "ipykernel>=7.3.0",
     "matplotlib>=3.11.0",
     "polars>=1.42.1",
+    "pulp>=3.3.2",
     "statsmodels>=0.14.6",
     "tqdm>=4.68.4",
 ]
