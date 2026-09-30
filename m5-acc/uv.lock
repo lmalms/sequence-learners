@@ -11,6 +11,18 @@ resolution-markers = [
 ]
 
 [[package]]
+name = "adagio"
+version = "0.2.6"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+dependencies = [
+    { name = "triad" },
+]
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/adagio/0.2.6/adagio-0.2.6.tar.gz", hash = "sha256:0c32768f3aba0e05273b36f9420a482034f2510f059171040d7e98ba34128d7a" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/adagio/0.2.6/adagio-0.2.6-py3-none-any.whl", hash = "sha256:1bb8317d41bfff8b11373bc03c9859ff166c498214bb2b7ce1e21638c0babb2c" },
+]
+
+[[package]]
 name = "appnope"
 version = "0.1.4"
 source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
@@ -71,6 +83,15 @@ wheels = [
     { url = "https://repo.teledev.io/repository/pypi-all/packages/cffi/2.0.0/cffi-2.0.0-cp314-cp314t-win32.whl", hash = "sha256:1fc9ea04857caf665289b7a75923f2c6ed559b8298a1b8c49e59f7dd95c8481e" },
     { url = "https://repo.teledev.io/repository/pypi-all/packages/cffi/2.0.0/cffi-2.0.0-cp314-cp314t-win_amd64.whl", hash = "sha256:d68b6cef7827e8641e8ef16f4494edda8b36104d79773a334beaa1e3521430f6" },
     { url = "https://repo.teledev.io/repository/pypi-all/packages/cffi/2.0.0/cffi-2.0.0-cp314-cp314t-win_arm64.whl", hash = "sha256:0a1527a803f0a659de1af2e1fd700213caba79377e27e4693648c2923da066f9" },
+]
+
+[[package]]
+name = "cloudpickle"
+version = "3.1.2"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/cloudpickle/3.1.2/cloudpickle-3.1.2.tar.gz", hash = "sha256:7fda9eb655c9c230dab534f1983763de5835249750e85fbcef43aaa30a9a2414" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/cloudpickle/3.1.2/cloudpickle-3.1.2-py3-none-any.whl", hash = "sha256:9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a" },
 ]
 
 [[package]]
@@ -144,6 +165,27 @@ wheels = [
     { url = "https://repo.teledev.io/repository/pypi-all/packages/contourpy/1.3.3/contourpy-1.3.3-cp314-cp314t-win32.whl", hash = "sha256:e74a9a0f5e3fff48fb5a7f2fd2b9b70a3fe014a67522f79b7cca4c0c7e43c9ae" },
     { url = "https://repo.teledev.io/repository/pypi-all/packages/contourpy/1.3.3/contourpy-1.3.3-cp314-cp314t-win_amd64.whl", hash = "sha256:13b68d6a62db8eafaebb8039218921399baf6e47bf85006fd8529f2a08ef33fc" },
     { url = "https://repo.teledev.io/repository/pypi-all/packages/contourpy/1.3.3/contourpy-1.3.3-cp314-cp314t-win_arm64.whl", hash = "sha256:b7448cb5a725bb1e35ce88771b86fba35ef418952474492cf7c764059933ff8b" },
+]
+
+[[package]]
+name = "coreforecast"
+version = "0.0.18"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18.tar.gz", hash = "sha256:2712aa23699302faf602253e413b6900eff395ddaebfed19ed4f9d9323ee7443" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:82a7aa34fd67166f688dd26bc4b44d207162d636b17e1bd321b7ba297fcb1cd2" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:9c4d13f2ff2e86ac05cd581e75bee96663f3b404cb1f50845c50b0d3b2a52fca" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:c610a456d223925eb3a52b3e5c98b3bfeebc499f6538287ceb62fbe1bcb29aed" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:b2d8520150fe9d768483181bf8debd5529904f1b4dc8e30bcf69fa04f5d6a66e" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp313-cp313-win_amd64.whl", hash = "sha256:a00e72d8ec09611b60c00c2b36befb437023093ef176a7e15610495a6592a959" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:efce165e59bfa2247f3ad25a3312695ea88e99b945c86ff4853c2ed765ef3253" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:9714f5f7254e95be7f2f50bd525344e5ba00de5ac0b95769c57a600879f4ce6e" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:88a53503347c2c1e862192c74462dca82bbd5612650c834470bd2f6fdff953fe" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:09217d20ea94c8f2db8727d27458524d7770307adebc9ec7c467d6b4b8a16190" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/coreforecast/0.0.18/coreforecast-0.0.18-cp314-cp314-win_amd64.whl", hash = "sha256:8c5f42fd675bb21d1b0e9cef54a02bb19613f11e6f45798bd45e4c57794af91d" },
 ]
 
 [[package]]
@@ -221,6 +263,29 @@ wheels = [
     { url = "https://repo.teledev.io/repository/pypi-all/packages/fonttools/4.63.0/fonttools-4.63.0-cp314-cp314t-win32.whl", hash = "sha256:948428a275741f0b64b113c955425a953314f4b9ab9997f73a72c83e68e569c8" },
     { url = "https://repo.teledev.io/repository/pypi-all/packages/fonttools/4.63.0/fonttools-4.63.0-cp314-cp314t-win_amd64.whl", hash = "sha256:6d4741eb179121cab9eea4cb2393d24492373a260d7945006358c08cfbf45419" },
     { url = "https://repo.teledev.io/repository/pypi-all/packages/fonttools/4.63.0/fonttools-4.63.0-py3-none-any.whl", hash = "sha256:445af2eab030a16b9171ea8bdda7ebf7d96bda2df88ee182a464252f6e05e20d" },
+]
+
+[[package]]
+name = "fsspec"
+version = "2026.9.0"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/fsspec/2026.9.0/fsspec-2026.9.0.tar.gz", hash = "sha256:0f08147951c8cb31d844c3547d631053b127863b60be04cf06e121333ee0e2fe" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/fsspec/2026.9.0/fsspec-2026.9.0-py3-none-any.whl", hash = "sha256:8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f" },
+]
+
+[[package]]
+name = "fugue"
+version = "0.9.7"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+dependencies = [
+    { name = "adagio" },
+    { name = "pandas" },
+    { name = "triad" },
+]
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/fugue/0.9.7/fugue-0.9.7.tar.gz", hash = "sha256:3e38d43ffc4bcdca78ed80628d4fb8bb707ca1fdf3b2abe9b8793e80ac968970" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/fugue/0.9.7/fugue-0.9.7-py3-none-any.whl", hash = "sha256:2eaab8aa709044a77b9f83b3fa79f83bd509205893824f27302082913a46f1fe" },
 ]
 
 [[package]]
@@ -399,6 +464,7 @@ dependencies = [
     { name = "matplotlib" },
     { name = "polars" },
     { name = "pulp" },
+    { name = "statsforecast" },
     { name = "statsmodels" },
     { name = "tqdm" },
 ]
@@ -409,6 +475,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.11.0" },
     { name = "polars", specifier = ">=1.42.1" },
     { name = "pulp", specifier = ">=3.3.2" },
+    { name = "statsforecast", specifier = ">=2.1.1" },
     { name = "statsmodels", specifier = ">=0.14.6" },
     { name = "tqdm", specifier = ">=4.68.4" },
 ]
@@ -473,6 +540,15 @@ wheels = [
 ]
 
 [[package]]
+name = "narwhals"
+version = "2.26.0"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/narwhals/2.26.0/narwhals-2.26.0.tar.gz", hash = "sha256:6b9cadca82f375c7e4cf584fdc86ca25da54827307a9c58f94547ee6104b82dd" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/narwhals/2.26.0/narwhals-2.26.0-py3-none-any.whl", hash = "sha256:29326d74f107c347fd1009bd58e38d9f7c7c5b51e6de97bc93dbc325d9038b54" },
+]
+
+[[package]]
 name = "nest-asyncio2"
 version = "1.7.2"
 source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
@@ -532,46 +608,42 @@ wheels = [
 
 [[package]]
 name = "pandas"
-version = "3.0.3"
+version = "2.3.3"
 source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
 dependencies = [
     { name = "numpy" },
     { name = "python-dateutil" },
-    { name = "tzdata", marker = "sys_platform == 'emscripten' or sys_platform == 'win32'" },
+    { name = "pytz" },
+    { name = "tzdata" },
 ]
-sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3.tar.gz", hash = "sha256:696a4a00a2a2a35d4e5deb3fc946641b96c944f02230e4f76137fe35d806c4fc" }
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3.tar.gz", hash = "sha256:e05e1af93b977f7eafa636d043f9f94c7ee3ac81af99c13508215942e64c993b" }
 wheels = [
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:67b3b64c11910cfa29f4e94a14d3bff9ee693b6fc76055e7cad549cee0aec5fa" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:39436b377d56d2a2e52d0395bdbee171f01068e99af5250509aceeb929f765c7" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:d4be06d68f9ddcfc645b87534911da79a8fbffc7573c80e0edcf42a5020624d8" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:a4eeb6830daf35a71cc09649bd823e2b542dac246cdee9614c6e4bd65028cd6a" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:1928e07221f82db493cd4af1e23c1bfca524a19a4699887975bff68f49a72bfb" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:51b1fe551acb77dac643c6fda86084d8d446c10fe64b06a9cc29c4cc8540e7f2" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313-win_amd64.whl", hash = "sha256:a82d532a3351d435432cd913edbccaf8b8e01d4dd0e5ced5a8d2e8ecd94c7e44" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313-win_arm64.whl", hash = "sha256:275c14e0fce14a2ec20eee474aecd305478ea3c1e6f6a9d8fe219a165542717e" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:46997386d528eb40376ecd6b033cf4a8a1e5282580f68f43de875b78cba2199d" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:261e308dfb22448384b7580cf719d2f998fe2966c92893c3e77d14008af1f066" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313t-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:dd1a5d1def6a46002e964510bdc67c368aa0951df5d1d9f8365336f5a1f490cd" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d72828c20c6d6e83e1e22a6a3b47b326b71664112fa9705dcbccfd7a39b62085" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:d26cbe1fcfc12e8fd900e2454163e466b2d3af84f7c75481df7683ffc073d870" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:3e91cec1879ada0624fc3dc9953c5cbd60208e59c0db28f540c5d6d47502422f" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp313-cp313t-win_amd64.whl", hash = "sha256:08d789b41f87e0905880e293cedf6197ce71fe67cc081358b1e148a491b9bd13" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:3650109c0f22879df8bd6179ab9ee3d7f1d1d4e7e0094a3f0032d9f51e2e64ac" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:bab900348131a7db1f69a7309ef141fd5680f1487094193bcbbb61791573bf8f" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:ba7e08b9ac1d54569cd1e256e3668975ed624d6826f7b68df0342b012007bddb" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:9d71c63ae4ebdbf70209742096f1fc46a83a0613c99d4b23766cced9ff8cd62a" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:e3a2ec42c98ffa2565a67e08e218d06d72576d758d90facb7c00805194d8f360" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:335f62418ed562cfc3c49e9e196375c28b729dcef8543abf4f9438e381bf3c76" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314-win_amd64.whl", hash = "sha256:3c20a521bbb85902f79f7270c80a59e1b5452d96d170c034f207181870f97ac5" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314-win_arm64.whl", hash = "sha256:a2d2dff8a04f3917b55ab3910c32990f8ddf7eceba114947838cefa976a68977" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314t-macosx_10_15_x86_64.whl", hash = "sha256:0d589105b3c14645af1738ff279b2995102d8f7a03b0a66dc8d95550eb513e04" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:13fc1e853d9e04743d11ba75a985ccbc2a317fe07d8af61e445a6fd24dacd6a6" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314t-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:819959dab7bbd0049c15623fbac4e29a191b9528160a61fb1032242d8ced2d9c" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:60ae316d3fd75d1858d450d0db0103ea2be3e7d4a95ec2f064f7e2ae63f7b028" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314t-musllinux_1_2_aarch64.whl", hash = "sha256:bd3a518890b400d32f9023722dc9a9a5c969f00b415419a3c06c043f09bb5d7d" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:9c39be2d709d01fa972a0cabc522389fceca4f3969332ba25a7d6c5802cf976a" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314t-win_amd64.whl", hash = "sha256:4db8c527972a821cf5286b40ccc57642a39bc62e62022b42f99f8a67fca8c3a1" },
-    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/3.0.3/pandas-3.0.3-cp314-cp314t-win_arm64.whl", hash = "sha256:b2c95f8bfc1ee412bf482605d7bfd30c12d1d26bd59fdd91efeef1d4718decb1" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:56851a737e3470de7fa88e6131f41281ed440d29a9268dcbf0002da5ac366713" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:bdcd9d1167f4885211e401b3036c0c8d9e274eee67ea8d0758a256d60704cfe8" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:e32e7cc9af0f1cc15548288a51a3b681cc2a219faa838e995f7dc53dbab1062d" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:318d77e0e42a628c04dc56bcef4b40de67918f7041c2b061af1da41dcff670ac" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:4e0a175408804d566144e170d0476b15d78458795bb18f1304fb94160cabf40c" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:93c2d9ab0fc11822b5eece72ec9587e172f63cff87c00b062f6e37448ced4493" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313-win_amd64.whl", hash = "sha256:f8bfc0e12dc78f777f323f55c58649591b2cd0c43534e8355c51d3fede5f4dee" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:75ea25f9529fdec2d2e93a42c523962261e567d250b0013b16210e1d40d7c2e5" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:74ecdf1d301e812db96a465a525952f4dde225fdb6d8e5a521d47e1f42041e21" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313t-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:6435cb949cb34ec11cc9860246ccb2fdc9ecd742c12d3304989017d53f039a78" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:900f47d8f20860de523a1ac881c4c36d65efcb2eb850e6948140fa781736e110" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:a45c765238e2ed7d7c608fc5bc4a6f88b642f2f01e70c0c23d2224dd21829d86" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:c4fc4c21971a1a9f4bdb4c73978c7f7256caa3e62b323f70d6cb80db583350bc" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314-macosx_10_13_x86_64.whl", hash = "sha256:ee15f284898e7b246df8087fc82b87b01686f98ee67d85a17b7ab44143a3a9a0" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:1611aedd912e1ff81ff41c745822980c49ce4a7907537be8692c8dbc31924593" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:6d2cefc361461662ac48810cb14365a365ce864afe85ef1f447ff5a1e99ea81c" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:ee67acbbf05014ea6c763beb097e03cd629961c8a632075eeb34247120abcb4b" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:c46467899aaa4da076d5abc11084634e2d197e9460643dd455ac3db5856b24d6" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:6253c72c6a1d990a410bc7de641d34053364ef8bcd3126f7e7450125887dffe3" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314-win_amd64.whl", hash = "sha256:1b07204a219b3b7350abaae088f451860223a52cfb8a6c53358e7948735158e5" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314t-macosx_10_13_x86_64.whl", hash = "sha256:2462b1a365b6109d275250baaae7b760fd25c726aaca0054649286bcfbb3e8ec" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:0242fe9a49aa8b4d78a4fa03acb397a58833ef6199e9aa40a95f027bb3a1b6e7" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314t-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:a21d830e78df0a515db2b3d2f5570610f5e6bd2e27749770e8bb7b524b89b450" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:2e3ebdb170b5ef78f19bfb71b0dc5dc58775032361fa188e814959b74d726dd5" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314t-musllinux_1_2_aarch64.whl", hash = "sha256:d051c0e065b94b7a3cea50eb1ec32e912cd96dba41647eb24104b6c6c14c5788" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pandas/2.3.3/pandas-2.3.3-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:3869faf4bd07b3b66a9f462417d0ca3a9df29a9f6abd5d0d0dbab15dac7abe87" },
 ]
 
 [[package]]
@@ -774,6 +846,35 @@ wheels = [
 ]
 
 [[package]]
+name = "pyarrow"
+version = "25.0.1"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1.tar.gz", hash = "sha256:9150a83248bfed9813ea3c3af74c3856c1984d444aa28e58bf7733b9750ddf6a" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp313-cp313-macosx_12_0_arm64.whl", hash = "sha256:c7c534ec03c358a76ea3e505e74c1b6aef290af90c444dfd092dbfe23e755b85" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp313-cp313-macosx_12_0_x86_64.whl", hash = "sha256:dda9470024204d7bbf2042b47c6e8a0e47a3eeb8e34405882dfaea6577e0c153" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:44a9120ce5bd81936b8ab9a88076e3fd47c2c6838e0e43630fed83626aca81d9" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:0befcf816e45a1af33ac775a9970b749e4868a230c7372f0ae5e932bee27039f" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:3f89685964f46e4216103c75483aac0c0692a5f72212d7ca835adba5ede56ce3" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:6943e2fe7954d29d84de45d29d34c8dc36ce96570e67d89aa9976e650a4a9138" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp313-cp313-win_amd64.whl", hash = "sha256:31e49a7888fcdf3a835da33ae777f6bb9a866334e5a789282fc26dcf426f7f15" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314-macosx_12_0_arm64.whl", hash = "sha256:bf0b672390cdcb640d7288f96b826d71ff4e9abb254a86c89890baf51a29cee6" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314-macosx_12_0_x86_64.whl", hash = "sha256:38a9a4b4b9613380e200641891495a56c3d5a98a092db4a870af9975e220471d" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314-manylinux_2_28_aarch64.whl", hash = "sha256:0b726ad7e7b669be982b0c71c07fe4b037d654354130da79a7902a669e93a66b" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314-manylinux_2_28_x86_64.whl", hash = "sha256:9171748cdf796972d85a4b60157c279913e242992e350c90c7450182a9838b2a" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:b7a296aac7a71fa0886c08e155ddb6c636a50013f801f6178daafa0f9e726188" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:0fe7c8b6c03969b49c8c66182e4a18e3819ab92d07cfab5d8370c531b9369ef0" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314-win_amd64.whl", hash = "sha256:f729cfdbd36fd99d543b67a914d2de044c84ebe45be8b34902b299b608c15c8f" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314t-macosx_12_0_arm64.whl", hash = "sha256:59a2de54c0cbd954da861eee4d1d330f8e909c45b53455baef696380f2c55033" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314t-macosx_12_0_x86_64.whl", hash = "sha256:35935cd5de130aa5cf4dea052a63e6bf2e17006c35c3a468194242b9b2bf5956" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314t-manylinux_2_28_aarch64.whl", hash = "sha256:f3831aaa25c67a99f99dc8b05873cb9d64560390372e2aa197ce9dd4a3f06a44" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314t-manylinux_2_28_x86_64.whl", hash = "sha256:6a1fdfc6659b6b19022f2e50627fb5cf7156a66c46bf4299379955cbe742382a" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314t-musllinux_1_2_aarch64.whl", hash = "sha256:169d3429d5be7c752125890620f75a60776d38b0035eddae939651640822332e" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:119297a6dc197e45d9c6d4415f7814a67ffa36c180d26f68c154c58067ae782d" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pyarrow/25.0.1/pyarrow-25.0.1-cp314-cp314t-win_amd64.whl", hash = "sha256:4288f27577352d608ca08553b0865e4a9b3aa14820c5d95b53337218d609835b" },
+]
+
+[[package]]
 name = "pycparser"
 version = "3.0"
 source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
@@ -810,6 +911,15 @@ dependencies = [
 sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/python-dateutil/2.9.0.post0/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3" }
 wheels = [
     { url = "https://repo.teledev.io/repository/pypi-all/packages/python-dateutil/2.9.0.post0/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427" },
+]
+
+[[package]]
+name = "pytz"
+version = "2026.4"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/pytz/2026.4/pytz-2026.4.tar.gz", hash = "sha256:464303645bafafd72418898368b2429458f709cf1eb6a15372fbcc396b64da63" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/pytz/2026.4/pytz-2026.4-py2.py3-none-any.whl", hash = "sha256:9d514388fbc89ca0833203464272ac485b8828568ab73532f5020f17e892a0ff" },
 ]
 
 [[package]]
@@ -920,6 +1030,36 @@ wheels = [
 ]
 
 [[package]]
+name = "statsforecast"
+version = "2.1.1"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+dependencies = [
+    { name = "cloudpickle" },
+    { name = "coreforecast" },
+    { name = "fugue" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scipy" },
+    { name = "statsmodels" },
+    { name = "threadpoolctl" },
+    { name = "tqdm" },
+    { name = "utilsforecast" },
+]
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1.tar.gz", hash = "sha256:3b4c91ac4e2a51a614596226df3cb210f99a152601f8235e0459248d05a42045" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:20a08e87dbec02dcdd05842655e70c4d8ba7ee82e168354a51da699a8cf337f5" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:964e7e6b1ae471972321519caaed6f758e7a841e2f001a1b51ee26ef7cbfb5bc" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:2010a8cdfae122164704a6f489c1997cd6526f6f0b751255df7a24902daa32b0" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3e160795172f33371d1a5976e817fa7d48c1a2e6aed956a672bb867e95504429" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp313-cp313-win_amd64.whl", hash = "sha256:3275a96605ef687a5be73af8423a8499240db54f7c6c173a28c259faf4e99176" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:a063096f9403b36f94975e1676be1aff63b620a3e71c91e1dc910813edf80684" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:3393ee930dc49a80649869340c6b549bff92c399595071c6bbcb512d44d525c7" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp314-cp314-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:2fd5f52d9d396027236af4152317ce3eac7c1c5f4c2b01248da10a74a193e0e2" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:fce69a9ba74adf4ad8b3a48071dae9e50bc8313a30380ad20bc723e31cd6f58c" },
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/statsforecast/2.1.1/statsforecast-2.1.1-cp314-cp314-win_amd64.whl", hash = "sha256:b00906992bba9c1ac779bf414801ad7f6df59754a1ab12c2869b1bc04de2cd0a" },
+]
+
+[[package]]
 name = "statsmodels"
 version = "0.14.6"
 source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
@@ -944,6 +1084,15 @@ wheels = [
     { url = "https://repo.teledev.io/repository/pypi-all/packages/statsmodels/0.14.6/statsmodels-0.14.6-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3414e40c073d725007a6603a18247ab7af3467e1af4a5e5a24e4c27bc26673b4" },
     { url = "https://repo.teledev.io/repository/pypi-all/packages/statsmodels/0.14.6/statsmodels-0.14.6-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:a518d3f9889ef920116f9fa56d0338069e110f823926356946dae83bc9e33e19" },
     { url = "https://repo.teledev.io/repository/pypi-all/packages/statsmodels/0.14.6/statsmodels-0.14.6-cp314-cp314-win_amd64.whl", hash = "sha256:151b73e29f01fe619dbce7f66d61a356e9d1fe5e906529b78807df9189c37721" },
+]
+
+[[package]]
+name = "threadpoolctl"
+version = "3.7.0"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/threadpoolctl/3.7.0/threadpoolctl-3.7.0.tar.gz", hash = "sha256:61348cfb77d53b9242e0017029244b559b810c142ced65b4e21eeca1843959a7" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/threadpoolctl/3.7.0/threadpoolctl-3.7.0-py3-none-any.whl", hash = "sha256:cd8b60b5641b45c67bbf73c64c843235fc2d8a480c87389f52f5dbee893b86be" },
 ]
 
 [[package]]
@@ -985,6 +1134,22 @@ wheels = [
 ]
 
 [[package]]
+name = "triad"
+version = "1.0.2"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+dependencies = [
+    { name = "fsspec" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "pyarrow" },
+    { name = "six" },
+]
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/triad/1.0.2/triad-1.0.2.tar.gz", hash = "sha256:4fe0b7ab2e95105971b7db694c344dee4d207d335bf7ddb501f2cb9c09790be2" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/triad/1.0.2/triad-1.0.2-py3-none-any.whl", hash = "sha256:f95257e9047fbd19a924958c4b7f9b5c0cef3e28cc03adf3baec28e80dcf45d9" },
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.16.0"
 source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
@@ -1000,6 +1165,21 @@ source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
 sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/tzdata/2026.3/tzdata-2026.3.tar.gz", hash = "sha256:4a1518b8993086a7982523e071643f3c0e5f213e75b21318e78bcabfff9d1415" }
 wheels = [
     { url = "https://repo.teledev.io/repository/pypi-all/packages/tzdata/2026.3/tzdata-2026.3-py2.py3-none-any.whl", hash = "sha256:dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931" },
+]
+
+[[package]]
+name = "utilsforecast"
+version = "0.2.16"
+source = { registry = "https://repo.teledev.io/repository/pypi-all/simple" }
+dependencies = [
+    { name = "narwhals" },
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "pandas" },
+]
+sdist = { url = "https://repo.teledev.io/repository/pypi-all/packages/utilsforecast/0.2.16/utilsforecast-0.2.16.tar.gz", hash = "sha256:dca406231d002279562ae897dbcb9e419c2fc5bf48908be02834b3187ce5a52b" }
+wheels = [
+    { url = "https://repo.teledev.io/repository/pypi-all/packages/utilsforecast/0.2.16/utilsforecast-0.2.16-py3-none-any.whl", hash = "sha256:985e7bbe999cd2c27e331c5c49e8b7934c617f3df0b933c105fbe71dae0283ed" },
 ]
 
 [[package]]
