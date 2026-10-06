@@ -1,0 +1,19 @@
+{
+  "executionEnvironments": [
+    {
+      "root": "m5-acc",
+      "extraPaths": ["m5-acc/.venv/lib/python3.13/site-packages"],
+      "pythonVersion": "3.13"
+    },
+    {
+      "root": "bikes",
+      "extraPaths": ["bikes/.venv/lib/python3.12/site-packages"],
+      "pythonVersion": "3.12"
+    },
+    {
+      "root": "gridsight",
+      "extraPaths": ["gridsight/.venv/lib/python3.13/site-packages"],
+      "pythonVersion": "3.13"
+    }
+  ]
+}
